@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern2"
+    android:padding="16dp"
+    tools:context=".Login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019">
+
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/input_text"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="#4343BF" />
+
+        <EditText
+            android:id="@+id/username1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/input_text"
+            android:fontFamily="sans-serif"
+            android:hint="Username"
+            android:padding="10dp"
+            android:textColor="#4343BF" />
+
+        <Button
+            android:id="@+id/btnsignin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="215dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="#4343BF"
+            android:fontFamily="sans-serif-black"
+            android:text="Login"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginRight="13dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/rock_salt"
+            android:shadowColor="#673AB7"
+            android:text="Welcome!"
+            android:textColor="#FF8405"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/sign_google_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/btnsignin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="285dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@drawable/icons8_google_35" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="55dp"
+            android:layout_height="43dp"
+            android:layout_alignBottom="@+id/btnsignin"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="330dp"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@drawable/ic_baseline_arrow_right_40" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="286dp"
+            android:layout_marginTop="340dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Back"
+            android:textColor="#3949AB" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

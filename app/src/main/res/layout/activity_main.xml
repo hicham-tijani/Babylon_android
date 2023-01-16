@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern2"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="463dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_text"
+            android:fontFamily="sans-serif"
+            android:hint="User Name"
+            android:padding="10dp"
+            android:textColor="#4343BF" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_text"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColor="#4343BF" />
+
+        <EditText
+            android:id="@+id/repassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_text"
+            android:fontFamily="sans-serif"
+            android:hint="Retype Password"
+            android:padding="10dp"
+            android:textColor="#4343BF" />
+
+        <Button
+            android:id="@+id/btnsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repassword"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4343BF"
+            android:fontFamily="sans-serif-black"
+            android:text="Create account"
+            android:textColor="#EDF7F5"
+            app:cornerRadius="30dp" />
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnsignup"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#4343BF"
+            android:fontFamily="sans-serif-black"
+            android:text="Login"
+            android:textColor="#EDF7F5"
+            app:cornerRadius="30dp" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="159dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginRight="13dp"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/rock_salt"
+            android:shadowColor="#673AB7"
+            android:text="Welcome!"
+            android:textColor="#FF8405"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="147dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="360dp"
+            android:background="#4343BF" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="178dp"
+            android:layout_marginTop="348dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="or"
+            android:textColor="#4343BF"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="360dp"
+            android:background="#4343BF" />
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF8405"
+    android:backgroundTint="#FF8405"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/babylon" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="392dp"
+        android:layout_height="112dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rock_salt"
+        android:padding="10dp"
+        android:shadowColor="#673AB7"
+        android:text="New Post"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp">
+
+
+        <TextView
+            android:id="@+id/camera"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginRight="238dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Camera"
+            android:textColor="#FAFBFB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp"
+            />
+
+        <TextView
+            android:id="@+id/gallery"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="130dp"
+            android:backgroundTint="#4343BF"
+            android:fontFamily="sans-serif-black"
+            android:text="Gallery"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="96dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@id/gallery"
+            android:backgroundTint="#B60D0D"
+            android:fontFamily="sans-serif-black"
+            android:text="Cancel"
+            android:textColor="#FBFAFA"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
