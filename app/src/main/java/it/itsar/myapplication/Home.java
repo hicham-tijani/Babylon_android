@@ -60,7 +60,7 @@ public class Home extends AppCompatActivity  {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), post.class);
+                Intent intent = new Intent(getApplicationContext(), NewPost.class);
                 startActivity(intent);
             }
         });
